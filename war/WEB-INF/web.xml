@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5">
+	<servlet>
+		<servlet-name>MyPage</servlet-name>
+		<servlet-class>gaeProject.MyPageServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Register</servlet-name>
+		<servlet-class>gaeProject.Register</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Update</servlet-name>
+		<servlet-class>gaeProject.Update</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ServeBlobFile</servlet-name>
+		<servlet-class>gaeProject.ServeBlobFile</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>EmailSender</servlet-name>
+		<servlet-class>gaeProject.EmailSender</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ReminderEmail</servlet-name>
+		<servlet-class>gaeProject.ReminderEmail</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>AddReminder</servlet-name>
+		<servlet-class>gaeProject.AddReminder</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>UsersTable</servlet-name>
+		<servlet-class>gaeProject.UsersTable</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>MyPage</servlet-name>
+		<url-pattern>/myPage</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Register</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ServeBlobFile</servlet-name>
+		<url-pattern>/serve</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Update</servlet-name>
+		<url-pattern>/update</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>EmailSender</servlet-name>
+		<url-pattern>/email</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ReminderEmail</servlet-name>
+		<url-pattern>/reminder</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AddReminder</servlet-name>
+		<url-pattern>/addreminder</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UsersTable</servlet-name>
+		<url-pattern>/usertable</url-pattern>
+	</servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>Login.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
